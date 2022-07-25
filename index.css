@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(26, 26, 26);
+}
+h2{
+    color: wheat;
+}
+.contenedor-simon{
+    display: grid;
+    grid-template-areas: 
+    'verde rojo'
+    'amarillo azul';
+    border: 20px solid black;
+    border-radius: 1000px;
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+}
+
+
+.verde{
+    grid-area: verde;
+    background-color: rgb(91, 183, 91);
+    border-right: 20px solid black;
+    border-bottom: 20px solid black;
+}
+.rojo{
+    grid-area: rojo;
+    background-color: rgb(255, 104, 104);
+    border-left: 20px solid black;
+    border-bottom: 20px solid black;
+}
+.amarillo{
+    grid-area: amarillo;
+    background-color: rgb(255, 255, 117);
+    border-top: 20px solid black;
+    border-right: 20px solid black;
+}
+.azul{
+    grid-area: azul;
+    background-color: rgb(86, 86, 250);
+    border-left: 20px solid black;
+    border-top: 20px solid black;
+}
+.boton-jugar{
+    width: 500px;
+    height: 50px;
+    background-color: antiquewhite;
+}
