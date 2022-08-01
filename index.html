@@ -5,31 +5,40 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Simón dice</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     
 </head>
 <body>
     
-    <h2>Puntuación:</h2>
-
+    
+    <h2 id="titulo-hacer">Simon Dice</h2>
 
     <div class="contenedor-simon">
-        <div class="verde">
+        <button class="verde">
+        
+        </button>
+        <button class="rojo">
 
-        </div>
-        <div class="rojo">
+        </button>
+        <button class="amarillo">
 
-        </div>
-        <div class="amarillo">
-
-        </div>
-        <div class="azul">
-
-        </div>
+        </button>
+        <button class="azul">
+            
+        </button>
     </div>
-
-    <button class="boton-jugar">Jugar</button>
-
-    <!-- <script src='main.js'></script> -->
+    <button id="boton-jugar">Jugar</button>
+    
+    <div id="puntajes">
+        <p id="puntuacion">Puntuación: 0</p>
+        <p id="mejor-puntuacion">Mejor Puntuación: 0</p>
+    </div>
+    
+    <script src="funciones.js"></script>
+    <script src='index.js'></script>
+    <script src='pruebas.js'></script>
 </body>
 </html>
